@@ -116,15 +116,14 @@ const projects = [
     {
       "id": 5,
       "title": "CS - Learning Platform",
-      "shortDescription": "CS - An interactive learning platform designed for first-year Computer Science students, offering structured lessons, exercises, and an AI-powered assistant for personalized learning.",
+      "shortDescription": "CS - An interactive learning platform designed for first-year Computer Science students, offering structured lessons, exercises.",
       "detailedDescription": `
-    <p><strong>CS</strong> is a dynamic and interactive web-based learning platform built to support <strong>first-year Computer Science students</strong>. The platform provides a structured and engaging educational experience with well-organized lessons, exercises, and resources. It also integrates an <strong>AI-powered assistant</strong> to enhance personalized learning and academic support.</p>
+    <p><strong>CS</strong> is a dynamic and interactive web-based learning platform built to support <strong>first-year Computer Science students</strong>. The platform provides a structured and engaging educational experience with well-organized lessons, exercises, and resources.</p>
     
     <strong>Key Features:</strong>
     <ul>
     <li>Organized course materials and structured lessons</li>
     <li>Interactive exercises and quizzes to reinforce learning</li>
-    <li>AI-powered assistant for academic guidance</li>
     <li>Responsive and user-friendly UI design</li>
     <li>Seamless navigation and enhanced user experience</li>
     <li>Community forum for peer discussions and collaborations</li>
@@ -134,9 +133,7 @@ const projects = [
     <ul>
     <li>HTML5 & CSS3 (Modern UI Design)</li>
     <li>JavaScript (Dynamic Content Handling)</li>
-    <li>Firebase (User Authentication & Database)</li>
-    <li>AI Integration for Personalized Learning</li>
-    </ul>
+
       `,
       "image": "img/projectimg/project05.png",
       "demo": "https://joseph-cef.github.io/CS-Year-1-LMD-Learning-Platform/",
