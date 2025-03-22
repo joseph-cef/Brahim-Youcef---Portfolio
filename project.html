@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="project-header">
+    <h1 id="project-title">Loading...</h1>
+  </header>
+
+  <section class="project-details" id="project-details">
+    <!-- Project details loaded by script -->
+  </section>
+
+  <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
+
+  <footer>
+    &copy; 2025 Brahim Youcef | All Rights Reserved
+  </footer>
+
+  <script>
+    const projectData = JSON.parse(localStorage.getItem('currentProject'));
+
+    if (projectData) {
+      document.getElementById('project-title').innerText = projectData.title;
+
+      document.getElementById('project-details').innerHTML = `
+        <img src="${projectData.image}" alt="${projectData.title}" class="project-image" />
+        <div class="project-description">
+          ${projectData.detailedDescription}
+        </div>
+        <a href="${projectData.demo}" class="btn" target="_blank">View Demo</a>
+        <a href="${projectData.github}" class="btn" target="_blank">GitHub Code</a>
+      `;
+    } else {
+      document.getElementById('project-details').innerHTML = `<p style="color:red;">No project data found!</p>`;
+    }
+  </script>
+
+</body>
+</html>
